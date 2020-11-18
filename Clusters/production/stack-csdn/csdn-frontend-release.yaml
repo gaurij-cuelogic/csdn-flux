@@ -17,9 +17,14 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
+  annotations:
+    fluxcd.io/automated: "true"
   name: content-ui
   namespace: flux-system
 spec:
+  values:
+      image: 
+        name: 39
   interval: 1m
   chart: 
     spec:
