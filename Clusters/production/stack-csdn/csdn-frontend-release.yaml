@@ -30,19 +30,19 @@ spec:
         name: chartmuseum-csdn
   targetNamespace: csdn-demo
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: usermanagement-ui
-  namespace: flux-system
-spec:
-  interval: 1m
-  chart: 
-    spec:
-      chart: usermanagement-ui
-      version: '1.0.0'
-      sourceRef:
-        kind: HelmRepository
-        name: chartmuseum-csdn
-  targetNamespace: csdn-demo
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: usermanagement-ui
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   chart: 
+#     spec:
+#       chart: usermanagement-ui
+#       version: '1.0.0'
+#       sourceRef:
+#         kind: HelmRepository
+#         name: chartmuseum-csdn
+#   targetNamespace: csdn-demo
   
