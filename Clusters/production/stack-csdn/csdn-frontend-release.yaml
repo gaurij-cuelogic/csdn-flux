@@ -20,7 +20,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: registry.hhstechgroup.com/hhs-cloud/content-service:dev-*
-  name: content-ui
+  name: content
   namespace: flux-system
 spec:
   interval: 1m
@@ -30,7 +30,7 @@ spec:
     replicaCount: 2
   chart: 
     spec:
-      chart: content-ui
+      chart: content
       version: '1.0.0'
       sourceRef:
         kind: HelmRepository
