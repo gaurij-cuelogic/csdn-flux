@@ -14,53 +14,53 @@ spec:
         name: chartmuseum-csdn
   targetNamespace: csdn-demo
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: content-fabric-connector
-  namespace: flux-system
-spec:
-  interval: 1m
-  chart: 
-    spec:
-      chart: content-fabric-connector
-      version: '1.0.0'
-      sourceRef:
-        kind: HelmRepository
-        name: chartmuseum-csdn
-  targetNamespace: csdn-demo
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: content-gridfs-connector
-  namespace: flux-system
-spec:
-  interval: 1m
-  chart: 
-    spec:
-      chart: content-gridfs-connector
-      version: '1.0.0'
-      sourceRef:
-        kind: HelmRepository
-        name: chartmuseum-csdn
-  targetNamespace: csdn-demo
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: content-search-service
-  namespace: flux-system
-spec:
-  interval: 1m
-  chart: 
-    spec:
-      chart: content-search-service
-      version: '1.0.0'
-      sourceRef:
-        kind: HelmRepository
-        name: chartmuseum-csdn
-  targetNamespace: csdn-demo
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: content-fabric-connector
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   chart: 
+#     spec:
+#       chart: content-fabric-connector
+#       version: '1.0.0'
+#       sourceRef:
+#         kind: HelmRepository
+#         name: chartmuseum-csdn
+#   targetNamespace: csdn-demo
+# ---
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: content-gridfs-connector
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   chart: 
+#     spec:
+#       chart: content-gridfs-connector
+#       version: '1.0.0'
+#       sourceRef:
+#         kind: HelmRepository
+#         name: chartmuseum-csdn
+#   targetNamespace: csdn-demo
+# ---
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: content-search-service
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   chart: 
+#     spec:
+#       chart: content-search-service
+#       version: '1.0.0'
+#       sourceRef:
+#         kind: HelmRepository
+#         name: chartmuseum-csdn
+#   targetNamespace: csdn-demo
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
@@ -94,19 +94,19 @@ spec:
         name: chartmuseum-csdn
   targetNamespace: csdn-demo
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: web
-  namespace: flux-system
-spec:
-  interval: 1m
-  chart: 
-    spec:
-      chart: web
-      version: '1.0.0'
-      sourceRef:
-        kind: HelmRepository
-        name: chartmuseum-csdn
-  targetNamespace: csdn-demo
----
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: web
+#   namespace: flux-system
+# spec:
+#   interval: 1m
+#   chart: 
+#     spec:
+#       chart: web
+#       version: '1.0.0'
+#       sourceRef:
+#         kind: HelmRepository
+#         name: chartmuseum-csdn
+#   targetNamespace: csdn-demo
+# ---
