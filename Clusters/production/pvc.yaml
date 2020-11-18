@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csdn-elastic-persistent-volume-claim
+  namespace: csdn-demo
+spec:
+  storageClassName: csdn-aws-storage-class
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage:  100Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csdn-mongo-persistent-volume-claim
+  namespace: csdn-demo
+spec:
+  storageClassName: csdn-aws-storage-class
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csdn-activemq-persistent-volume-claim
+  namespace: csdn-demo
+spec:
+  storageClassName: csdn-aws-storage-class
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage:  10Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csdn-redis-persistent-volume-claim
+  namespace: csdn-demo
+spec:
+  storageClassName: csdn-aws-storage-class
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: csdn-demo
+spec: {}
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: chartmuseum-csdn
+  namespace: flux-system
+spec:
+  url: https://chartmuseum.dyp.cloud/stack-csdn/
+  secretRef:
+    name: https-credentials
+  interval: 1m
