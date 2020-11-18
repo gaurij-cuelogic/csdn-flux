@@ -19,13 +19,15 @@ kind: HelmRelease
 metadata:
   annotations:
     fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: registry.hhstechgroup.com/hhs-cloud/content-service:dev-*
   name: content-ui
   namespace: flux-system
 spec:
-  values:
-      image: 
-        name: 39
   interval: 1m
+  values:
+    image:
+      tag: dev-43
+    replicaCount: 1
   chart: 
     spec:
       chart: content-ui
